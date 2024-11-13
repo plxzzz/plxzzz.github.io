@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.content
+		{
+			width: 90%;
+			height: 1000px;
+			background-color: white;
+			margin: 0 auto;
+
+		}
+		.header
+		{
+			width: 80%;
+			background-color:white;
+			margin: 0 auto;
+		}
+		.header1
+		{
+			width: 80%;
+			background-color:white;
+			margin: 0 auto;
+		}
+		.sidebar
+		{
+			width: 60%;
+			height: 47px;
+			background-color: green;
+			float: right;
+			border-radius:24px;
+			text-align: center;
+			
+		}
+
+		img
+		{
+			float: left;
+		}
+		.sidebar p
+		{
+			
+			
+			display: inline-block;
+			width: 50px;
+			height: 100%;
+			line-height: 47px;
+			margin: 0 auto;
+			padding: 0 15px;
+			color: white;
+			
+		}
+		.sidebar p:hover
+		{
+			width: 50px;
+			height: 100%;
+			background-color: white;
+			color: black;
+		}
+		.sidebar p:nth-child(1)
+		{
+			background-color:yellow ;
+			color: black;
+		}
+		.clearboth::after
+		{
+			content:"";
+			clear: both;
+			display: block;
+		}
+		.content1
+		{ 
+		width:60%;
+		height: 1000px;
+		background-color: white;
+		float: left;
+		
+		
+		 }
+		.container
+		{
+		 	width: 40%;
+		 	height: 1000px;
+		 	background-color: white;
+		 	float: left;
+/*		 	margin-left: 20px;*/
+
+		 }
+		 .spana1
+		 {
+		 	font-size: 20px;
+		 	font-weight: bold;
+		 	padding: 10px;
+		 	line-height:30px ;
+		 }
+		 .spana2
+		 {
+		 	color: #d3d3d3;
+		 	float: right;
+		 	
+		 	font-size: 10px;
+		 	line-height:30px ;
+
+
+		 }
+		 .contenta1
+		 {
+		 	width: 100%;
+		 	height: 30px;
+		 	padding-bottom: 10px;
+		 	
+		 	border-bottom:1px solid  red;
+
+
+		 }
+		 .contentb1
+		 {
+		 	width: 100%;
+		 	height: 200px;
+		 	margin-top: 20px;
+		 	border-bottom:1px solid  grey;
+		 	margin-bottom: 10px;
+
+		 }
+		 .a{
+		 	border-bottom: 1px solid transparent;
+
+		 }
+		 .contentb1 .contentb2 
+		 {
+		 	width: 30%;
+		 	float: left;
+		 }
+		 .contentb2>img
+		 {
+		 	width: 100%;
+		 	height: 150px;
+		 	float: left;
+
+
+
+		 }
+		 .contentb3
+		 {
+		 	width: 70%;
+		 	height: 100%;
+		 	float: left;
+		 	
+		 	font-size: 10px;
+		 	box-sizing: border-box;
+
+
+
+
+
+		 }
+		
+		.contentb3 p{
+			margin-top: 5px;
+			margin-left: 20px;
+		}
+		
+		 
+		 	
+		 .contentb3 p:nth-child(1)
+		 {
+			font-size: 20px;
+			
+			
+		 	
+		 }
+		 .contentb4{
+		 	width: 100%;
+		 	height: 20px;
+		 	margin-top: 30px;
+		 	
+		 }
+		 .contentb5{
+		 	float: left;
+
+		 }
+		 .contentb8 {
+		 	margin-left: 20px;
+
+		  }
+
+		 .contentb6{
+		 	float:right;
+		 }
+
+		 .contentb7{
+		 	color:green;
+		 }
+		 .contentb7:hover{
+		 	color: green;
+		 	text-decoration: underline;
+		 }
+
+		 .righta{
+		 	width: 90%;
+		 	font-size: 20px;
+		 	margin-left: 45px;
+
+		 	
+		 	
+
+		 	border-bottom: 1px solid grey;
+		 	padding: 10px 0;
+
+		 }
+		 .rightb{
+		 	width:90% ;
+		 	height: 80px;
+		 	
+		 	margin-top: 20px;
+		 	margin-left: 45px;
+		 	
+
+		 }
+		 .rightb1{
+		 	width: 25%;
+		 	height: 50px;
+		 	background-repeat: no-repeat;
+		 	text-align: center;
+		 	float: left;
+		 	padding-top: 60px;
+		 	background-position: 22px 0px;
+
+		 }
+		 .rightb2{
+		 	background-image: url(images1/images/ico_05_1.jpg);
+		 }
+		 .rightb3{
+		 	background-image: url(images1/images/ico_06_1.jpg);
+		 }
+		 .rightb4{
+		 	background-image: url(images1/images/ico_04_1.jpg);
+		 }
+		 .rightb5{
+		 	background-image: url(images1/images/ico_07_1.jpg);
+		 }
+		 .rightb6{
+		 	
+		 	text-align: center;
+
+		 }
+		 .rightb2:hover{
+		 	background-image: url(images1/images/ico_05.png);
+
+		 }
+		 .rightb3:hover{
+		 	background-image: url(images1/images/ico_06.png);
+
+		 }
+		 .rightb4:hover{
+		 	background-image: url(images1/images/ico_04.png);
+
+		 }
+		 .rightb5:hover{
+		 	background-image: url(images1/images/ico_07.png);
+
+		 }
+		 .rightc{
+		 	width: 90%;
+		 	margin-top: 20px;
+		 	margin-left: 45px;
+		 }
+		 .rightc>img{
+		 	width: 100%;
+		 }
+		 .rightd{
+		 	width: 90%;
+		 	height: 30px;
+		 	margin-top: 20px;
+		 	margin-left: 45px;
+		 	text-align: left;
+
+
+		 }
+		 .rightd div{
+		 	display: inline-block; 
+		 	padding:10px 10px;
+		 	
+		 	
+		 }
+		 .rightd div:nth-child(1){
+		 	background-color: orange;
+		 	color: white;
+		 }
+		 .rightd div:hover{
+		 	background-color: orange;
+		 	color: white;
+		 }
+		 .righte{
+		 	width: 90%;
+		 	height: 100px;
+		 	
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+
+
+		 	
+		 }
+		 .righte1{
+		 	background-image: url(images1/images/ph2.png);
+		 	width: 30px;
+			height: 20px;
+/*			background-position: 0px 0px;*/
+			margin-top: 8px;
+			background-repeat: no-repeat;
+			float: left;
+
+
+			
+
+		 }
+		 .righte2{background-position:7px 1px;}
+		 .righte3{background-position:7px -40px;}
+		 .righte4{background-position:7px -79px;}
+		 .righte5{background-position:7px -120px;}
+		 .righte6{background-position:7px -160px;}
+		 .righte7{background-position:7px -204px;}
+
+		 .righte8{
+		 	width: 100%;
+		 	height: 30px;
+		 	border-bottom: 1px solid grey;
+		
+		 }
+		 .righte9{
+		 	line-height: 30px;
+		 	text-align: center;
+/*		 	display: inline-block;*/
+			float: left;
+
+		 		 }
+		 .rightf{
+		 	width: 90%;
+		 	height: 50px;
+		 	border-bottom: 1px solid grey;
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+
+		 }
+		 .rightf1{
+		 	padding-top: 18px;
+		 	font-size: 20px;
+		 }
+		 .rightg{
+		 	width: 90%;
+		 	
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+		 }
+		 .rightg1{
+		 	width: 100%;
+		 	height: 50px;
+		 	text-align: left;
+		 }
+		 .rightg2{
+		 	color: white;
+		 	display:inline-block;
+		 	background-color: green;
+		 	margin: 10px;
+		 	line-height: 30px;
+		 	height: 30px;
+		 	border-radius:5px;
+		 	padding: 0 5px;
+		}
+		.righth{
+			width: 90%;
+			height: 450px;
+		 	
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+		}
+		.righth1{
+			width: 100%;
+			height: 80px;
+			margin-bottom: 10px;
+		}
+		.righth2{
+			width: 25%;
+			height: 80px;
+			float: left;
+		}
+		.righth2>img{
+			width: 100%;
+			float: left;
+		}
+		.righth3{
+			width: 75%;
+			height: 80px;
+			float: left;
+		}
+		.righth4{
+			float: left;
+			padding-left: 10px;
+
+		}
+		.righth4:hover
+		{
+			color: red;
+			text-decoration: underline;
+			float: left;
+		}
+		.righth5{
+			padding-top: 50px;
+		}
+		.righth5 img{
+			float: left;
+			padding-top: 5px;
+			padding-left: 10px;
+		}
+		.righth6{
+			float: left;
+			color: green;
+		}
+		.righti{
+			width: 90%;
+		 	
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+
+		}
+		.righti>img{
+			width: 100%;
+		}
+		.rightj{
+			width: 90%;
+			height: 50px;
+		 	margin-left: 45px;
+		 	margin-top: 20px;
+		 }
+		 .rightj1{
+			font-size: 20px;
+			float: left;
+			margin-top: 5px;
+		 }
+		 .rightj2{
+			float:grey;
+			font-size: 10px;
+			margin-top: 10px;
+			float: right;
+
+			 }
+		 .rightk{
+		 	width: 90%;
+		 	height: 80px;
+		 	margin-top: 20px;
+		 	margin-left: 45px;
+		 	border: 1px solid grey;
+		 	
+		 }
+		 .rightk1{
+		 	
+		 	color: grey;
+		 	padding:10px 10px;
+		 	float: left;
+		 }
+
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="header clearboth">
+			<div><img src="./images1/images/logo.png">
+			</div>
+			<div class="sidebar">
+				<p>首页</p>
+				<p>关于我</p>
+				<p>文章</p>
+				<p>心情</p>
+				<p>相册</p>
+				<p>留言</p>
+			</div>
+		</div>
+		<div class="header1">
+			<div class="content1">
+				<div class="clearboth">
+					<img style="margin-top: 32px;" src="./images1/images/a1.jpg">
+				</div >
+				<div class="clearboth contenta1">
+					<span class="spana1">文章标题</span> 
+					<span class="spana2">栏目标题 &nbsp;&nbsp;栏目标题 &nbsp;&nbsp;栏目标题</span>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentb1 a">
+					<div class="contentb2">
+						<img style="height: 150px;" src="./images1/images/01.jpg" >
+					</div>
+					<div class="contentb3">
+					
+						<p>住在手机里的朋友</p>
+						
+						<p>通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊</p>
+						<div class="contentb4">
+							<div class="contentb8">
+								<div class="contentb5">
+									<img src="./images1/images/newsbg01.png">
+									<span class="contentb7">个人博客</span>
+								</div>
+								<div class="contentb5">
+									<img src="./images1/images/newsbg02.png">
+									<span>2014-02-19</span>
+								</div>
+								<div>
+								
+								<div  class="contentb6">
+									<img src="./images1/images/newsbg04.png">
+									<span>浏览（<span class="contentb7">449</span>）</span>
+								<div class="contentb6">
+									<img src="./images1/images/newsbg03.png">
+									<span>评论（<span class="contentb7">30</span>）</span>
+								</div>
+								</div>
+								</div>
+
+
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="container">
+				<div class="righta">关注我
+				</div>
+				<div class="rightb">
+					<div class="rightb1 rightb2">
+						<span class="rightb6">新浪微博</span>
+					</div>
+					<div class="rightb1 rightb3">
+						<span class="rightb6">
+						腾讯微博
+						</span>
+					</div>
+					<div class="rightb1 rightb4">
+						<span class="rightb6">RS</span>
+					
+					</div>
+					<div class="rightb1 rightb5">
+						<span class="rightb6">
+						邮件
+						</span>
+					</div>
+					
+				</div>
+				<div class="rightc"><img src="images1/images/ad300x100.jpg">
+				<div style="clear: both;"></div>
+				</div>
+				<div class="rightd">
+					<div>点击排行</div>
+					<div>最新文章</div>
+					<div>站长推荐</div>
+				</div>
+				<div class="righte">
+					<div class="righte8">
+						<div class="righte1 righte2"></div>
+						<div class="righte9">住在手机里的朋友</div>
+					</div>
+					<div class="righte8">
+						<div class="righte1 righte3"></div>
+						<div class="righte9">教你怎么用欠费手机拨打电话</div>
+					</div>
+					<div class="righte8">
+						<div class="righte1 righte4"></div>
+						<div class="righte9">原来以为，一个人的勇敢是，删掉他的手...</div>
+					</div>
+					<div class="righte8">
+						<div class="righte1 righte5"></div>
+						<div class="righte9">手机的16个惊人小秘密，据说99.999%</div>
+					</div>
+					<div class="righte8">
+						<div class="righte1 righte6"></div>
+						<div class="righte9">你面对的是生活不是手机</div>
+					</div>
+					<div class="righte8">
+						<div class="righte1 righte7"></div>
+						<div class="righte9">豪雅手机正式发布！在法国全工打造的
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="rightf">
+					<div class="rightf1">标签云</div>
+				</div>
+				<div class="rightg">
+					<div class="rightg1">
+						<div class="rightg2">个人博克</div>
+						<div class="rightg2">web开发</div>
+						<div class="rightg2">web开发</div>
+						<div class="rightg2">HTML</div>
+					</div>
+					<div class="rightg1">
+						<div class="rightg2">CSS3</div>
+						<div class="rightg2">HTML5+CSS3</div>
+						<div class="rightg2">百度</div>
+						<div class="rightg2">javascript</div>
+					</div>
+					<div class="rightg1">
+						<div class="rightg2">个人博客</div>
+						<div class="rightg2">web开发</div>
+						<div class="rightg2">web开发</div>
+						<div class="rightg2">HTML</div>
+					</div>
+					<div class="rightg1">
+						<div class="rightg2">CSS3</div>
+						<div class="rightg2">HTML5+CSS3</div>
+						<div class="rightg2">百度</div>
+						<div class="rightg2">javascript</div>
+					</div>
+				</div>
+				<div class="rightf">
+					<div class="rightf1">图文推荐</div>
+				</div>
+				<div class="righth">
+					<div class="righth1">
+						<div class="righth2">
+							<img src="images1/images/01.jpg">
+						</div>
+						<div class="righth3">
+							<div class="righth4">
+								住在手机里的朋友
+							</div>
+							<div class="righth5">
+								<div ><img src="images1/images/lanmbq.png">
+									<span class="righth6">个人博客</span>
+								</div>
+								<div>
+									<img src="images1/images/datepng.png">
+									<span class="righth6">2014-02-19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="righth1">
+						<div class="righth2">
+							<img src="images1/images/01.jpg">
+						</div>
+						<div class="righth3">
+							<div class="righth4">
+								住在手机里的朋友
+							</div>
+							<div class="righth5">
+								<div ><img src="images1/images/lanmbq.png">
+									<span class="righth6">个人博客</span>
+								</div>
+								<div>
+									<img src="images1/images/datepng.png">
+									<span class="righth6">2014-02-19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="righth1">
+						<div class="righth2">
+							<img src="images1/images/01.jpg">
+						</div>
+						<div class="righth3">
+							<div class="righth4">
+								住在手机里的朋友
+							</div>
+							<div class="righth5">
+								<div ><img src="images1/images/lanmbq.png">
+									<span class="righth6">个人博客</span>
+								</div>
+								<div>
+									<img src="images1/images/datepng.png">
+									<span class="righth6">2014-02-19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="righth1">
+						<div class="righth2">
+							<img src="images1/images/01.jpg">
+						</div>
+						<div class="righth3">
+							<div class="righth4">
+								住在手机里的朋友
+							</div>
+							<div class="righth5">
+								<div ><img src="images1/images/lanmbq.png">
+									<span class="righth6">个人博客</span>
+								</div>
+								<div>
+									<img src="images1/images/datepng.png">
+									<span class="righth6">2014-02-19</span>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="righth1">
+						<div class="righth2">
+							<img src="images1/images/01.jpg">
+						</div>
+						<div class="righth3">
+							<div class="righth4">
+								住在手机里的朋友
+							</div>
+							<div class="righth5">
+								<div ><img src="images1/images/lanmbq.png">
+									<span class="righth6">个人博客</span>
+								</div>
+								<div>
+									<img src="images1/images/datepng.png">
+									<span class="righth6">2014-02-19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="righti">
+					<img src="images1/images/03.jpg">
+				</div>
+				<div class="rightj">
+					<div class="rightj1">友情链接</div>
+					<div class="rightj2">[申请友情链接]</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="rightk">
+						<div class="rightk1">杨青个人博额客</div>
+						<div class="rightk1">web开发</div>
+						<div class="rightk1">前端设计</div>
+						<div class="rightk1">html</div>
+						<div class="rightk1">CSS3</div>
+						<div class="rightk1">HTML5+CSS3</div>
+						<div class="rightk1">百度</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
